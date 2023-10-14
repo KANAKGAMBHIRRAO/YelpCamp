@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* #78415b
+
+#2b597c */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* overflow-x: hidden; */
+    background: #fff;
+    min-height:100vh;
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:30px ;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+/* .uplift{
+    
+} */
+
+.uplift{
+    padding-bottom: 20px;
+    font-size:30px;
+}
+
+.space a{
+    margin-left: 10px;
+}
+
+.logo{
+    color: #112434;
+    font-weight: 500;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation li{
+    list-style: none;
+}
+
+.navigation li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #112434;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+/* 660 708 */
+.navigation li a:hover,
+.navigation li a.active{
+    background:#112434;
+    color: #fff;
+}
+
+.parallax{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parallax img{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#text{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    color: #112434;
+}
+
+#dan{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  
+  color: #112434;
+}
+/* 
+
+.sec{
+    position:relative;
+    padding: 100px;
+    background: #112434;
+}
+ 
+.sec h4{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column {
+    padding:5% 7%;
+    margin:auto
+}
+
+.carder{
+    width:270px;
+    height:400px;
+    background-color: #2b597c;
+    border-radius: 15px
+}
+
+.card-header h3{
+    margin-top:0px
+} */
+
+/* Section */
+
+.sec {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #112434;;
+    padding: 3.25rem;
+    overflow: hidden;
+  }
+  
+  .sec h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .sec p {
+    font-size: 1rem;
+    color:  #2b597c;
+    font-weight: 300;
+  }
+  
+  /* Card */
+  
+  .container .content {
+    display: flex;
+    /* background-color: #2b597c; */
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+   
+  }
+  
+  .card {
+    position: relative;
+    /* background-color: #2b597c; */
+    color:  #112434;
+    border: 3px solid  #fff;
+    border-radius: 50px;
+    /* border-image-source: url('plants.png'); */
+    width: 15rem;
+    
+  }
+  
+  /* .card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #359381;
+    clip-path: circle(55% at 0 0);
+    border-top-left-radius: 10px;
+  }
+   */
+  .card .card-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+  }
+  
+  .card .name-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .name-details .name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .name-details .details {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  #plants2 {
+    position: absolute;
+    top: 100%; /* Place it just below the .container */
+    left: 0;
+    width: 100%; /* Make it fill the container width */
+    max-height: 200px; /* Limit the height */
+  }
+
+  
