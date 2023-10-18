@@ -248,7 +248,7 @@ ul.navigation li a.active{
 }
   }
 
-  @media(max-width: 998.98px){
+  @media(max-width: 991.98px){
     .navbar .navbar-toggler {
       background-color: #112434;
       border: 2px solid black;
