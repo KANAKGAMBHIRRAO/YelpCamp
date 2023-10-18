@@ -38,21 +38,71 @@
     />
   </head>
   <body>
-    <header>
-      <div class="space">
-        <i class="fa-solid fa-campground uplift"></i>
-        <a href="/campgrounds" class="logo">CampGrounds</a>
-      </div>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="space">
+          <i class="fa-solid fa-campground uplift"></i>
+          <a href="#" class="logo">CampGrounds</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNew"
+          aria-controls="navbarNew"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNew">
+          <ul class="navigation">
+            <% if(!currentUser) { %>
+            <li><a class="nav-links" href="/login">Login</a></li>
+            <li><a class="nav-links" href="/register">Register</a></li>
+            <% } else { %>
+            <li><a class="nav-links" href="/logout">Logout</a></li>
+            <% } %>
+          </ul>
+        </div>
+      </nav> -->
 
-      <ul class="navigation">
-        <% if(!currentUser) { %>
-        <li><a class="nav-links" href="/login">Login</a></li>
-        <li><a class="nav-links" href="/register">Register</a></li>
-        <% } else { %>
-        <li><a class="nav-links" href="/logout">Logout</a></li>
-        <% } %>
-      </ul>
-    </header>
+    <nav
+      class="navbar navbar-expand-lg sticky-top bg-body-tertiary navbar-dark"
+    >
+      <div class="container-fluid">
+        <div class="space">
+          <i class="fa-solid fa-campground uplift"></i>
+          <a href="#" class="logo">CampGrounds</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto navigation">
+            <% if(!currentUser){ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Register</a>
+            </li>
+            <% }else{ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <section class="parallax">
       <a href="/campgrounds">
@@ -169,8 +219,7 @@
         scrollTrigger: {
           scrub: true,
         },
-        y: -120,
-        x: -100,
+        y: -100,
       });
     </script>
   </body>

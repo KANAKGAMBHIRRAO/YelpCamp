@@ -28,6 +28,20 @@ header{
     align-items: center;
     z-index: 1000;
 }
+
+.navbar .navbar-toggler{
+  background-color: #112434;;
+  border: 2px solid black;
+  margin-right: 25px;
+}
+
+
+
+
+ul li a.nav-link{
+  color:#112434;
+  
+}
 /* .uplift{
     
 } */
@@ -36,7 +50,9 @@ header{
     padding-bottom: 20px;
     font-size:30px;
 }
-
+.space{
+  margin-left: 10px;
+}
 .space a{
     margin-left: 10px;
 }
@@ -46,13 +62,16 @@ header{
     font-weight: 500;
     font-size: 2rem;
     text-decoration: none;
+    
 }
 
 .navigation{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 40px;
+    /* position: absolute;
+    right:2px; */
 }
 
 .navigation li{
@@ -64,15 +83,15 @@ header{
     padding: 6px 15px;
     color: #112434;
     border-radius: 20px;
-    font-weight: 500;
+    font-weight: 430;
     font-size: 1.5em;
 }
 /* 660 708 */
-.navigation li a:hover,
-.navigation li a.active{
+/* ul.navigation li a:hover,
+ul.navigation li a.active{
     background:#112434;
     color: #fff;
-}
+} */
 
 .parallax{
     position:relative;
@@ -92,7 +111,9 @@ header{
 
 #text{
     position: absolute;
-    top:50%;
+    top:30%;
+    left:40%;
+    right:25%;
     transform: translateY(-50%);
     font-size: 4em;
     color: #112434;
@@ -106,46 +127,7 @@ header{
   
   color: #112434;
 }
-/* 
 
-.sec{
-    position:relative;
-    padding: 100px;
-    background: #112434;
-}
- 
-.sec h4{
-    font-size: 3em;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.sec p{
-    font-size: 1em;
-    color: #fff;
-    font-weight: 300;
-}
-
-#pricing{
-    padding: 100px;
-    text-align: center;
-}
-
-.pricing-column {
-    padding:5% 7%;
-    margin:auto
-}
-
-.carder{
-    width:270px;
-    height:400px;
-    background-color: #2b597c;
-    border-radius: 15px
-}
-
-.card-header h3{
-    margin-top:0px
-} */
 
 /* Section */
 
@@ -234,12 +216,69 @@ header{
     position: relative;
   }
 
-  #plants2 {
-    position: absolute;
-    top: 100%; /* Place it just below the .container */
-    left: 0;
-    width: 100%; /* Make it fill the container width */
-    max-height: 200px; /* Limit the height */
+  @media (max-width : 767.98px){
+    #text{
+      position: absolute;
+      top: 46%;
+      left: 35%;
+      transform: translateY(-50%);
+      font-size: 4em;
+      color: #112434;
+  }
+ 
+  
+
+
   }
 
+  @media (max-width : 425px){
+    #text{
+      position: absolute;
+      top:36%;
+      left:15%;
+      transform: translateY(-50%);
+      font-size: 4em;
+      color: #112434;
+  }
+
+  .navbar .navbar-toggler {
+    background-color: #112434;
+    border: 2px solid black;
+    margin-right: -46px;
+}
+  }
+
+  @media(max-width: 998.98px){
+    .navbar .navbar-toggler {
+      background-color: #112434;
+      border: 2px solid black;
+      margin-right: -4px;
+  }
+  }
+
+  @media(min-width: 768px){
+    .navbar .navbar-toggler {
+      background-color: #112434;
+      border: 2px solid black;
+      margin-right: -50px;
+  }
+  }
+
+  @media (max-width:575.98px){
+    #text{
+      position: absolute;
+      top:36%;
+      left:26%;
+      transform: translateY(-50%);
+      font-size: 4em;
+      color: #112434;
+  }
+
+  .navbar .navbar-toggler {
+    background-color: #112434;
+    border: 2px solid black;
+    margin-right: -46px;
+}
+  }
+ 
   
