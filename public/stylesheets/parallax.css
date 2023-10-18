@@ -87,11 +87,11 @@ ul li a.nav-link{
     font-size: 1.5em;
 }
 /* 660 708 */
-/* ul.navigation li a:hover,
+ul.navigation li a:hover,
 ul.navigation li a.active{
     background:#112434;
     color: #fff;
-} */
+}
 
 .parallax{
     position:relative;
